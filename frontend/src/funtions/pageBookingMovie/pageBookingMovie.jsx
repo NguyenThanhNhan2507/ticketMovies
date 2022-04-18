@@ -1,14 +1,23 @@
-
 import React from 'react';
 import NavBar from '../../components/navbar/navbar';
+import './pageBookingMovie.css';
+import MovieRun from "./components/movierun/movieRun"
 
 
 
-function PageBookingMovie() {
+function pageBookingMovie(props) {
+    
+
 
     return (
-        <NavBar/>
+        <div className="fullpage">
+            <div className="fullslide">
+                <NavBar setUser={props.setUserState}></NavBar>
+                <MovieRun></MovieRun>
+            </div>
+        </div>
+        
     );
 }
 
-export default PageBookingMovie;
+export default pageBookingMovie;
