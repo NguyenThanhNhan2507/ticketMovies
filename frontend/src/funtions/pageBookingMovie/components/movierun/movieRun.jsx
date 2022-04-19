@@ -29,10 +29,10 @@ const moviesSlide=[
     },
     {
         id:2,
-        name:"Ròm",
+        name:"Docter Stranger 2",
         digital:"3D",
         movieDemo:movie2,
-        movieLink:"https://www.youtube.com/embed/XRm1P7oGpMQ",
+        movieLink:"https://youtu.be/3xccmeAsy8g",
     },
     {
         id:3,
