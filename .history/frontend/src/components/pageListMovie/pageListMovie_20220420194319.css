@@ -1,0 +1,18 @@
+.showMovies{
+    padding:20px 0 70px 0;
+}
+
+.showMovies-shownow{
+    margin-bottom: 10px;
+}
+
+.showMovies-title{
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding-left: 9px;
+    color: var(--color-main1);
+    border-left: 5px solid var(--color-main1);
+    height: 35px;
+}
