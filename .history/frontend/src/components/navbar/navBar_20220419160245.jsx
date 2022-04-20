@@ -200,11 +200,9 @@ function NavBar(props) {
           >
            
             <MenuItem onClick={handleHistory}>Lịch sử đặt vé</MenuItem>
-           <Link to="/login">
-           <MenuItem onClick={handleLogOut} style={{ color: "red" }}>
+            <MenuItem onClick={handleLogOut} style={{ color: "red" }}>
               Log Out
             </MenuItem>
-           </Link>
           </Menu>
         </div>
       </nav>
