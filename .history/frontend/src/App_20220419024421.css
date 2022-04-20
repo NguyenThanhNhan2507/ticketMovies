@@ -22,7 +22,7 @@ body{
     outline: none!important;
 }
 .page{
-    background: url(./assets/images/backgroundmovie.jpg) no-repeat center;
+    /* background: url(./assets/images/backgroundmovie.jpg) no-repeat center; */
     background-size: cover;
     height:100vh;
     display: flex;
