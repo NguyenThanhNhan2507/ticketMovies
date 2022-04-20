@@ -1,0 +1,11 @@
+.fullslide{
+    height:100vh;
+}
+
+.footer{
+    padding: 50px 40px 0 40px;
+    position: relative;
+    z-index: 0;
+    height:100%;
+    padding:50px 40px 0 40px;
+}

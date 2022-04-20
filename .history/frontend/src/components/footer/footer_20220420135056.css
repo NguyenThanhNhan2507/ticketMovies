@@ -1,0 +1,9 @@
+.footer_top-content{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: system-ui;
+    margin-bottom: 25px;
+    border-left: 5px solid;
+    padding-left: 10px;
+}

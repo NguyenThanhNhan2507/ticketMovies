@@ -8,17 +8,13 @@ import Footer from '../../components/footer/footer';
 
 function pageBookingMovie() {
     return (
-        <div className="fullpage">
-            <div className="fullslide">
+        <div className="fullside">
                 <NavBar></NavBar>
                 <MovieRun></MovieRun>
-            </div>
-            <div className="footer">
+                <div className="footer">
                 <Footer></Footer>
-            </div>
-          
+                </div>
         </div>
-        
     );
 }
 

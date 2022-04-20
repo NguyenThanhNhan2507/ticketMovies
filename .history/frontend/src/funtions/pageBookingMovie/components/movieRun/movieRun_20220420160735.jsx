@@ -16,7 +16,7 @@ import './movieRun.css';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
-MovieRun.propTypes = {
+movieRun.propTypes = {
 
 };
 const moviesSlide=[

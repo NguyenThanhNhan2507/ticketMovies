@@ -16,20 +16,20 @@ import './movieRun.css';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
-MovieRun.propTypes = {
+movieRun.propTypes = {
 
 };
 const moviesSlide=[
     {
         id:1,
-        name:"HACKSAW RIDGE",
+        name:" Hacksaw Ridge",
         digital:"2D",
         movieDemo:movie1,
         movieLink:"https://www.youtube.com/embed/s2-1hz1juBI",
     },
     {
         id:2,
-        name:"Doctor Stranger 2",
+        name:"Docter Stranger 2",
         digital:"3D",
         movieDemo:movie2,
         movieLink:"https://youtu.be/3xccmeAsy8g",
@@ -43,37 +43,37 @@ const moviesSlide=[
     },
 ]
 
-function MovieRun(props) {
+function movieRun() {
     
 
     return (
-        <Swiper className="mySwiper swiper-container mySwiper" loop={true} centeredSlides={true} autoplay={{
+        <Swiper className="movietrailer movie-container movietrailer" loop={true} centeredSlides={true} autoplay={{
             "delay": 30000,
             "disableOnInteraction": false
         }} pagination={{
             "clickable": true
         }} navigation={true}>
                 {moviesSlide.map((movie,index)=>(
-                    <SwiperSlide className="swiper-slide" key={movie.id}>
-                        <section className="pageMovie" >
+                    <SwiperSlide className="movie-slideshow" key={movie.id}>
+                        <section className="movierun" >
                             <div>
                                 <video src={movie.movieDemo} muted="true" autoplay="true" loop="true" ></video>
                                 <div className="overlay"></div>
-                                <div className="slideVideo--content">
-                                    <div className="slideVideo--content__imdb d-flex align-items-center">
+                                <div className="slideshowmovie--content">
+                                    <div className="slideshowmovie--content__imdb d-flex align-items-center">
                                         <i className="fas fa-star"></i>
                                         <i className="fas fa-star"></i>
                                         <i className="fas fa-star"></i>
                                         <i className="fas fa-star"></i>
                                         <i className="fas fa-star"></i>
                                     </div>
-                                    <div className="slideVideo--content__name">
+                                    <div className="slideshowmovie--content__name">
                                         {movie.name}
                                     </div>
-                                    <div className="slideVideo--content__digital">{movie.digital} Digital</div>
-                                    <div className="slideVideo--content__watch d-flex align-items-center">
+                                    <div className="slideshowmovie--content__digital">{movie.digital} Digital</div>
+                                    <div className="slideshowmovie--content__watch d-flex align-items-center">
                                         <Trailer trailer={movie.movieLink}></Trailer>
-                                        <div className="slideVideo--content__watch-title">WATCH TRAILER</div>
+                                        <div className="slideshowmovie--content__watch-title">Xem trailer</div>
                                     </div>
                                 </div>
                             </div>
@@ -85,4 +85,4 @@ function MovieRun(props) {
     );
 }
 
-export default MovieRun;
+export default movieRun;
