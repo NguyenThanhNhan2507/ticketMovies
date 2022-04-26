@@ -3,8 +3,6 @@ import axiosApi from "./axiosApi";
 const movieApi = {
     getMovieApi() {
         const url = `/QuanLyPhim/LayDanhSachPhim`
-        return axiosApi.get(url, {params: params})
+        return axiosApi.get()
     }
 }
-
-export default movieApi

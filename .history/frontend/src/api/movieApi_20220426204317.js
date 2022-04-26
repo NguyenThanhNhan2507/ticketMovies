@@ -6,5 +6,3 @@ const movieApi = {
         return axiosApi.get(url, {params: params})
     }
 }
-
-export default movieApi
