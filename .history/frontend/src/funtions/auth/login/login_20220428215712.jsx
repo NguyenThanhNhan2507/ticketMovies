@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 import { useDispatch } from "react-redux";
 import { Link,  } from "react-router-dom";
-import {  toast, ToastContainer } from "react-toastify";
+import {  ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "../../../assets/images/logocam.png";
 import "./login.css"
@@ -48,17 +48,12 @@ function LogIn() {
         const action = getUser(logInUser)
         dispatch(action)
         history.push("/")
-        setLoading(true)
-      })
-      .catch((err) =>{
-        toast.error(err.message)
-        setLoading(false)
+
       })
   }
   return (
     <div className="page">
       <ToastContainer />
-      
       <div className="backgroundBlur"></div>
       <div className="container">
         <section className="fullnavbar">
