@@ -12,7 +12,7 @@ import { getUser } from "./loginCall";
 import Loading from "../../../components/loading/loading";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import "firebase/auth";
+
 
 function LogIn(props) {
   const [email, setEmail] = useState("")

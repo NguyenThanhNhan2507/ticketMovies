@@ -2,19 +2,18 @@ import { Button, IconButton } from "@material-ui/core";
 import React, { useState } from "react";
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 import { useDispatch } from "react-redux";
-import { Link, useHistory } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 import {  toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "../../../assets/images/logocam.png";
 import "./login.css"
+import { useHistory } from "react-router";
 import firebase from "../../../callBack/firebase";
 import { getUser } from "./loginCall";
 import Loading from "../../../components/loading/loading";
-import Visibility from "@material-ui/icons/Visibility";
-import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import "firebase/auth";
 
-function LogIn(props) {
+
+function LogIn() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [showPassword, setShowPassword] = useState(false);
@@ -31,9 +30,6 @@ function LogIn(props) {
   }
   const getShowPassword = (event) =>{
     setShowPassword(!showPassword)
-  }
-  const getDownLoadPassword = (event) =>{
-    event.preventDefault()
   }
   const getLogin = () =>{
     setLoading(true)
@@ -123,10 +119,7 @@ function LogIn(props) {
                   <IconButton
                     className="showPassword"
                     aria-label="toggle password visibility"
-                    onClick={getShowPassword}
-                    onMouseDown={getDownLoadPassword}
                   >
-                  {showPassword ? <Visibility/> : <VisibilityOff/>}
                   </IconButton>
                 </div>
 
@@ -145,7 +138,7 @@ function LogIn(props) {
             <div className="loginContent--other">
               <div className="login-signup-now" data-uia="login-signup-now">
                 Bạn mới tham gia ?
-                <Link to="/" onClick={props.toggle}>
+                <Link to="/">
                   <a className=" " target="_self">
                     {" "}
                     Đăng ký ngay

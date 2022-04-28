@@ -1,0 +1,9 @@
+.loadingContent{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #00000085;
+    height: 100%;
+    z-index: 99;
+    width: 100%;
+}
