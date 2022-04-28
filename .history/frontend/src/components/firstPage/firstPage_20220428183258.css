@@ -1,0 +1,43 @@
+.navbar{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.navbar.navbar-logo{
+    float: left;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+img.logo{
+    width: 130px;
+    cursor: pointer;
+}
+.navbar-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: auto;
+}
+button.login{
+    padding: 8px 20px;
+    background: var(--color-main1);
+    border: none;
+}
+button.login:hover{
+    background: #fcbc33;
+}
+.login--a{
+    color: #ffffff;
+}
+section.content{
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

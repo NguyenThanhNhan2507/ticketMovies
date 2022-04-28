@@ -1,0 +1,113 @@
+.navbar{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.backgroundColor{
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.4);
+    background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: -moz- oldlinear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    height: 100%;
+}
+.container{
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+    top:0;
+}
+.navbar.navbar-logo{
+    float: left;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+img.logo{
+    width: 130px;
+    cursor: pointer;
+}
+.navbar-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: auto;
+}
+button.login{
+    padding: 8px 20px;
+    background: var(--color-main1);
+    border: none;
+}
+button.login:hover{
+    background: #fcbc33;
+}
+.login--a{
+    color: #ffffff;
+}
+section.content{
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.content-title{
+    font-size: 32px;
+    max-width: 650px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.content-title small{
+    font-size: 15px;
+    color: #bebaba;
+    font-weight: 500;
+}
+.content-title p{
+    margin-bottom: 0;
+}
+button.signinHome{
+    padding: 8px 20px;
+    background:var(--color-main1);
+    border: none;
+}
+.content-form{
+    height: 47px;
+}
+.content-form__input{
+    position: relative;
+    display: flex;
+}
+.pagelabel{
+    margin-bottom: 0;
+}
+form.login-form{
+    display: flex;
+}
+button.signinPage{
+    padding: 8px 20px;
+    border: none;
+    background:var(--color-main1);
+}
+button.signinPage:hover{
+    background: #fcbc33;
+}
+.signinPage--a{
+    color: #ffffff;
+}
+.signinPage--a i{
+    font-size: 13px;
+    margin-left: 5px;
+}
+.content-form__input button.signinPage{
+    height: 47px;
+}

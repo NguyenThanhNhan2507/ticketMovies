@@ -1,0 +1,8 @@
+img.logo{
+    width: 130px;
+    cursor: pointer;
+}
+
+button.login{
+    padding: 8px 20px;
+}

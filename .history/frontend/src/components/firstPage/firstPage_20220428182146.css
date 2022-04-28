@@ -1,0 +1,16 @@
+.navbar{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+img.logo{
+    width: 130px;
+    cursor: pointer;
+}
+
+button.login{
+    padding: 8px 20px;
+    background: var(--color-main1);
+    border: none;
+}
